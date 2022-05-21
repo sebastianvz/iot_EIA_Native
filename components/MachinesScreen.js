@@ -14,7 +14,7 @@ export default function MachinesScreen({ navigation }) {
     }).then((response) => {
       if (response.status === 200) {
         return response.json().then((json_response) => {
-          setlist_machine(json_response["result"]);
+          setlist_machine(json_response["myresult"]);
           return false;
         });
       } else {
